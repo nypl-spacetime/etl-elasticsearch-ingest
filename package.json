@@ -1,0 +1,24 @@
+{
+  "name": "etl-elasticsearch-ingest",
+  "version": "0.0.1",
+  "description": "Elasticsearch Ingest for NYC Space/Time Directory Graph dataset",
+  "main": "elasticsearch-ingest.js",
+  "scripts": {
+    "test": "standard",
+    "readme": "spacetime-generate-etl-readme ./ -o README.md"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/nypl-spacetime/etl-nyc-wards.git"
+  },
+  "author": "Bert Spaan",
+  "license": "MIT",
+  "devDependencies": {
+    "spacetime-generate-etl-readme": "~0.2.0",
+    "standard": "^6.0.8"
+  },
+  "dependencies": {
+    "highland": "^2.10.5",
+    "spacetime-db-elasticsearch": "nypl-spacetime/spacetime-db-elasticsearch"
+  }
+}

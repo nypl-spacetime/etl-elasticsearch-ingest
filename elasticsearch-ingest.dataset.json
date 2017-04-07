@@ -1,0 +1,11 @@
+{
+  "id": "elasticsearch-import",
+  "title": "Elasticsearch Ingest",
+  "license": "CC0",
+  "description": "Elasticsearch Ingest for NYC Space/Time Directory Graph dataset",
+  "author": "Bert Spaan",
+  "website": "http://spacetime.nypl.org/",
+  "dependsOn": [
+    "spacetime-graph.aggregate"
+  ]
+}
