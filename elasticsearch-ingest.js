@@ -18,7 +18,7 @@ function getVersion (index) {
   return parseInt(match[1])
 }
 
-function doehet (dataset, ndjsonStream, version, callback) {
+function createIndex (dataset, ndjsonStream, version, callback) {
   const versionedDataset = Object.assign({}, dataset, {
     id: addVersion(dataset.id, version)
   })
@@ -80,13 +80,13 @@ function ingest (config, dirs, tools, callback) {
     if (err) {
       if (err.status === 404) {
         // alias does not exist, set version to 1!
-        doehet(dataset, ndjsonStream, 1, callback)
+        createIndex(dataset, ndjsonStream, 1, callback)
       } else {
         callback(err)
       }
     } else {
       const currentVersion = getVersion(index)
-      doehet(dataset, ndjsonStream, currentVersion + 1, callback)
+      createIndex(dataset, ndjsonStream, currentVersion + 1, callback)
     }
   })
 }
