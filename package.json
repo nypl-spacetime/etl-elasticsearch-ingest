@@ -1,6 +1,6 @@
 {
   "name": "etl-elasticsearch-ingest",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Elasticsearch Ingest for NYC Space/Time Directory Graph dataset",
   "main": "elasticsearch-ingest.js",
   "scripts": {
