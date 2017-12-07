@@ -14,7 +14,7 @@
   "author": "Bert Spaan",
   "license": "MIT",
   "devDependencies": {
-    "spacetime-generate-etl-readme": "~0.2.0",
+    "spacetime-generate-etl-readme": "nypl-spacetime/generate-etl-readme",
     "standard": "^6.0.8"
   },
   "dependencies": {

@@ -3,8 +3,19 @@
   "title": "Elasticsearch Ingest",
   "license": "CC0",
   "description": "Elasticsearch Ingest for NYC Space/Time Directory Graph dataset",
-  "author": "Bert Spaan",
-  "website": "http://spacetime.nypl.org/",
+  "sources": [
+    {
+      "title": "Graph of all NYC Space/Time Directory data",
+      "path": "http://spacetime.nypl.org/#data-spacetime-graph"
+    }
+  ],
+  "contributors": [
+    {
+      "title": "Bert Spaan",
+      "role": "author"
+    }
+  ],
+  "homepage": "http://spacetime.nypl.org/",
   "dependsOn": [
     "spacetime-graph.aggregate"
   ]
